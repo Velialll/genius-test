@@ -109,11 +109,19 @@ ul {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.3s;
 }
 .link:hover {
   color: var(--color-brand-normal);
 }
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -134,7 +142,13 @@ ul {
 /* hero section*/
 .hero-section {
   padding: 272px 0;
-  background-image: url('../images/hero-section-background.jpg');
+  background-image: linear-gradient(
+      127deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url('../images/hero-section-background.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -272,6 +286,10 @@ ul {
   );
   border: 1px solid lightgray; /*delete*/
   border-radius: 16px;
+  transition: transform 0.5s;
+}
+.format-card:hover {
+  transform: scale(1.05);
 }
 .format-title {
   font-size: 24px;
@@ -302,6 +320,9 @@ ul {
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
   fill: var(--color-primary-light);
+}
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 /* Contact section */
 .contact-section {
@@ -399,19 +420,26 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  transition: opacity 0.3s, visibility 0.3s;
 }
-.modal {
-  position: relative;
-  width: 880px;
-  height: 880px;
-  background-color: var(--color-primary-light);
-  border-radius: 32px;
-}
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
 .modal-btn-close {
   position: absolute;
   top: 40px;
