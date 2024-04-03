@@ -214,11 +214,13 @@
                     Ім'я
                   </label>
                   <input
+                    pattern="^^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
                     class="form-input"
                     type="text"
                     id="user-name"
                     name="user-name"
                     placeholder="Ім'я"
+                    required
                   />
                 </div>
 
@@ -227,11 +229,13 @@
                     Телефон
                   </label>
                   <input
+                    pattern="^\+[0-9]{12}"
                     class="form-input"
                     type="tel"
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
                 <div class="form-field">
@@ -245,6 +249,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
 
@@ -344,17 +349,19 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Ім'я
             </label>
             <input
+              pattern="^^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
               class="form-input"
               type="text"
               id="user-name"
               name="user-name"
               placeholder="Ім'я"
+              required
             />
           </div>
 
@@ -363,11 +370,13 @@
               Телефон
             </label>
             <input
+              pattern="^\+[0-9]{12}"
               class="form-input"
               type="tel"
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
@@ -381,6 +390,7 @@
               id="user-email"
               name="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 
