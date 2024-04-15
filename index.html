@@ -225,21 +225,21 @@
 
       <section class="contact-section section" id="contact-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h2 class="contact-title section-title">
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title section__title">
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <!-- form -->
               <form name="contact-form" autocomplete="off">
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-name">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">
                     Ім'я
                   </label>
                   <input
                     pattern="^^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     id="user-name"
                     name="user-name"
@@ -248,13 +248,13 @@
                   />
                 </div>
 
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-tel">
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel">
                     Телефон
                   </label>
                   <input
                     pattern="^\+[0-9]{12}"
-                    class="form-input"
+                    class="input__control"
                     type="tel"
                     id="user-tel"
                     name="user-tel"
@@ -262,13 +262,14 @@
                     required
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-email">
+
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email">
                     Електронна пошта
                   </label>
 
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="email"
                     id="user-email"
                     name="user-email"
@@ -277,19 +278,19 @@
                   />
                 </div>
 
-                <button class="form-button button" type="submit">
+                <button class="contact-section__button button" type="submit">
                   Замовити дзвінок
                 </button>
                 <p class="form-terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-terms-link" href="#"
+                  <a class="form-terms__link" href="#"
                     >з політикою конфіденційності</a
                   >
                 </p>
               </form>
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               title="Google maps"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1638712576914!2d30.48865857684021!3d50.456673086915266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1701358318110!5m2!1suk!2sua"
               width="603"
@@ -305,14 +306,14 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-container">
-          <nav class="footer-nav">
-            <div class="footer-logo">
+        <div class="footer__container">
+          <nav class="footer__nav">
+            <div class="footer__logo">
               <a href="#">
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer__menu">
               <li>
                 <a class="link" href="#traditions-section">Наші традиції</a>
               </li>
@@ -321,21 +322,21 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
-            <ul class="address-list">
+          <address class="footer__address">
+            <ul class="footer__list">
               <li>
-                <a class="address-link" href="tel:+380960000007">
+                <a class="footer__address-link" href="tel:+380960000007">
                   + 38 (096) 000 00 07
                 </a>
               </li>
               <li>
-                <a class="address-link" href="mailto:shopbakery@gmail.com">
+                <a class="footer__address-link" href="mailto:shopbakery@gmail.com">
                   shopbakery@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  class="address-link"
+                  class="footer__address-link"
                   href="https://maps.app.goo.gl/zeaC7XxazHz6WxWD9"
                   target="_blank"
                 >
@@ -344,24 +345,24 @@
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="32" height="32">
+                  <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <svg class="address-icon" width="32" height="32">
+                  <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <div class="address-info">
-              <a class="address-link" href="#" target="_blank">
+            <div class="footer__address-info">
+              <a class="footer__address-link" href="#" target="_blank">
                 Політика конфіденційності
               </a>
-              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+              <p class="footer__address-copyright">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
@@ -370,17 +371,17 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-name">
               Ім'я
             </label>
             <input
               pattern="^^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
-              class="form-input"
+              class="input__control"
               type="text"
               id="user-name"
               name="user-name"
@@ -389,13 +390,13 @@
             />
           </div>
 
-          <div class="form-field">
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-tel">
               Телефон
             </label>
             <input
               pattern="^\+[0-9]{12}"
-              class="form-input"
+              class="input__control"
               type="tel"
               id="user-tel"
               name="user-tel"
@@ -403,13 +404,14 @@
               required
             />
           </div>
-          <div class="form-field">
+          
+          <div class="modal__form-field input">
             <label class="form-label visually-hidden" for="user-email">
               Електронна пошта
             </label>
 
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               id="user-email"
               name="user-email"
@@ -418,12 +420,12 @@
             />
           </div>
 
-          <button class="form-button button" type="submit">
+          <button class="modal__button button" type="submit">
             Замовити дзвінок
           </button>
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#">з політикою конфіденційності</a>
           </p>
         </form>
       </div>
